@@ -16,7 +16,7 @@ url: http://liaoheng.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-	lang: en
+ lang: en
 
 # Directory
 source_dir: source
@@ -70,7 +70,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:liaoheng/liaoheng.github.io.git
+  repo:  git@github.com:liaoheng/liaoheng.github.io.git
   branch:  master
 
 feed:
@@ -79,3 +79,7 @@ feed:
   limit: 20
   hub:
   content:
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
