@@ -21,7 +21,6 @@ date: 2017-09-15 17:34:00
  > ├── node_modules
  > ├── package.json
 
-
 2. 编辑`package.json`文件添加：
 
   ```json
