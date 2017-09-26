@@ -10,7 +10,7 @@ date: 2017-09-15 17:34:00
 
 1. [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 2. [Node](https://nodejs.org/en/download/)
-3. [Watchman 可选](https://facebook.github.io/watchman/docs/install.html#build-install) `Windows问题比较多`
+3. [Watchman 可选](https://facebook.github.io/watchman/docs/install.html#build-install) `Windows问题比较多，不推荐安装`
 4. [Android SDK](https://developer.android.com/studio/index.html)`配置环境`
 
 ### 配置
@@ -225,7 +225,8 @@ date: 2017-09-15 17:34:00
   ```shell
   react-native run-android
   ```
-  > 如果安装Watchman`开发服务`会一直在后台存在，之后可以直接运行程序
+
+  > 如果使用Windows系统请使用方法1，方法2会在运行app时出现异常：`java.io.IOException: Could not delete path`
 
 2. 通过命令运行`开发服务`，然后手动运行app
 
@@ -234,7 +235,7 @@ date: 2017-09-15 17:34:00
   #也可使用： react-native start
   ```
 
-  `开发服务`正常启动后如下，使用中不能关闭：
+  `开发服务`正常启动后如下，使用中不能关闭（如果安装Watchman，`开发服务`会在后台运行可以关闭当前窗口）：
 
   ```shell
    \> ReactTest@0.0.1 start x:\xxxx\React
@@ -260,10 +261,10 @@ date: 2017-09-15 17:34:00
    ```
 
 ### 提示
-> - 默认在根目录中执行以上命令
-> - 出现手机或虚拟机无法连接电脑时可使用`adb reverse tcp:8081 tcp:8081`
-> - debug模式默认使用8081端口,如果本地以被占用，通过`react-native start --port 9988`修改端口。
-> - 注意需要权限：`<uses-permission android:name="android.permission.INTERNET" />`
-> - 参考：
+- 默认在根目录中执行以上命令
+- 出现手机或虚拟机无法连接电脑时可使用`adb reverse tcp:8081 tcp:8081`
+- debug模式默认使用8081端口,如果本地以被占用，通过`react-native start --port 9988`修改端口。
+- 注意需要权限：`<uses-permission android:name="android.permission.INTERNET" />`
+- 参考：
   - http://facebook.github.io/react-native/docs/integration-with-existing-apps.html
   - http://facebook.github.io/react-native/docs/getting-started.html
