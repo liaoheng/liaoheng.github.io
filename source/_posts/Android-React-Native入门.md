@@ -17,36 +17,36 @@ date: 2017-09-15 17:34:00
 1. 项目结构，创建相应文件
 
  > ├── android
- > ├── index.android.js
+ > ├── index.js
  > ├── node_modules
  > ├── package.json
 
 2. 编辑`package.json`文件添加：
 
   ```json
-   {
-     "name": "[项目名]",
-     "version": "0.0.1",
-     "private": true,
-     "scripts": {
-       "start": "node node_modules/react-native/local-cli/cli.js start",
-       "test": "jest"
-     },
-     "dependencies": {
-       "react": "16.0.0-alpha.12",
-       "react-native": "0.47.1",
-       "react-navigation":"1.0.0-beta.11"
-     },
-     "devDependencies": {
-       "babel-jest": "20.0.3",
-       "babel-preset-react-native": "2.1.0",
-       "jest": "20.0.4",
-       "react-test-renderer": "16.0.0-alpha.12"
-     },
-     "jest": {
-       "preset": "react-native"
-     }
-   }
+	{
+	  "name": "[项目名]",
+	  "version": "0.0.1",
+	  "private": true,
+	  "scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	  },
+	  "dependencies": {
+		"react": "16.3.1",
+		"react-native": "0.55.1",
+		"react-navigation": "1.5.2"
+	  },
+	  "devDependencies": {
+		"babel-jest": "22.4.3",
+		"babel-preset-react-native": "4.0.0",
+		"jest": "22.4.3",
+		"react-test-renderer": "16.3.1"
+	  },
+	  "jest": {
+		"preset": "react-native"
+	  }
+	}
   ```
 
   > 也可以使用命令创建官方的HelloWorld项目，然后拷贝相关配置文件，如下：
@@ -63,7 +63,7 @@ date: 2017-09-15 17:34:00
   npm install -g react-native-cli
   ```
 
-4. 编辑`index.android.js`文件添加：
+4. 编辑`index.js`文件添加：
 
   ```javascript
   import React, { Component } from 'react';
@@ -78,11 +78,11 @@ date: 2017-09-15 17:34:00
    render() {
      return (
        <View style={styles.container}>
-         <Text style={styles.welcome}>
+        <Text style={styles.welcome}>
           Welcome to React Native!
-         </Text>
+        </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
+          To get started, edit index.js
         </Text>
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
@@ -144,6 +144,7 @@ date: 2017-09-15 17:34:00
   - 在app目录`build.gradle`文件中添加：
 
     ```groovy
+	apply from: "../../node_modules/react-native/react.gradle"
     android {
     defaultConfig {
        ndk {
@@ -167,25 +168,30 @@ date: 2017-09-15 17:34:00
   - 在app项目中创建`MApplication.java`
 
     ```java
-    public class MApplication extends Application implements ReactApplication      {
+    public class MApplication extends Application implements ReactApplication{
 
-        private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this)       {
+        private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this){
 
-       @Override
-       public boolean getUseDeveloperSupport() {
-           return BuildConfig.DEBUG;
-       }
+			@Override
+			public boolean getUseDeveloperSupport() {
+				return BuildConfig.DEBUG;
+			}
 
-       @Override
-       protected List<ReactPackage> getPackages() {
-           return Arrays.<ReactPackage>asList(new MainReactPackage());
-       }
-     };
+			@Override
+			protected List<ReactPackage> getPackages() {
+				return Arrays.<ReactPackage>asList(new MainReactPackage());
+			}
 
-     @Override
-     public ReactNativeHost getReactNativeHost() {
-         return mReactNativeHost;
-     }
+			@Override
+			protected String getJSMainModuleName() {
+				return "index";
+			}
+		};
+
+		@Override
+		public ReactNativeHost getReactNativeHost() {
+			return mReactNativeHost;
+		}
     }
     ```
 
@@ -197,7 +203,7 @@ date: 2017-09-15 17:34:00
      @Nullable
      @Override
      protected String getMainComponentName() {
-        return "ReactTest";//自定义会与index.android.js交互
+        return "ReactTest";//与index.js中registerComponent对应
      }
     }
     ```
@@ -268,3 +274,5 @@ date: 2017-09-15 17:34:00
 - 参考：
   - http://facebook.github.io/react-native/docs/integration-with-existing-apps.html
   - http://facebook.github.io/react-native/docs/getting-started.html
+
+### Demo:[ReactTest](https://github.com/liaoheng/ReactTest)
