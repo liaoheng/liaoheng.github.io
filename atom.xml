@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>liaoheng`s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://liaoheng.me/"/>
+  <updated>2021-07-14T08:26:07.691Z</updated>
+  <id>https://liaoheng.me/</id>
+  
+  <author>
+    <name>liaoheng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android密度无关像素(dp)与屏幕适配</title>
+    <link href="https://liaoheng.me/2021/07/14/android-dp-and-screen-adaptation/"/>
+    <id>https://liaoheng.me/2021/07/14/android-dp-and-screen-adaptation/</id>
+    <published>2021-07-14T08:16:34.000Z</published>
+    <updated>2021-07-14T08:26:07.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;密度无关像素-density-independent-pixels&quot;&gt;&lt;a href=&quot;#密度无关像素-density-independent-pixels&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PyQt5中QWebEngineView与JavaScript交互</title>
+    <link href="https://liaoheng.me/2019/12/23/PyQt5-QWebEngineView%E4%B8%8EJavaScript%E4%BA%A4%E4%BA%92/"/>
+    <id>https://liaoheng.me/2019/12/23/PyQt5-QWebEngineView%E4%B8%8EJavaScript%E4%BA%A4%E4%BA%92/</id>
+    <published>2019-12-23T09:16:38.000Z</published>
+    <updated>2021-07-14T07:59:33.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h3&gt;&lt;h4 id=&quot;开发环境&quot;&gt;&lt;a href=&quot;#开发环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android React Native入门</title>
+    <link href="https://liaoheng.me/2017/09/15/Android-React-Native%E5%85%A5%E9%97%A8/"/>
+    <id>https://liaoheng.me/2017/09/15/Android-React-Native%E5%85%A5%E9%97%A8/</id>
+    <published>2017-09-15T09:34:00.000Z</published>
+    <updated>2021-07-14T07:59:33.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;本文需要了解基本Android开发知识&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android BLE Issues(问题集) </title>
+    <link href="https://liaoheng.me/2016/12/19/Android-BLE-Issues/"/>
+    <id>https://liaoheng.me/2016/12/19/Android-BLE-Issues/</id>
+    <published>2016-12-19T14:08:00.000Z</published>
+    <updated>2021-07-14T07:59:33.815Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;新进入公司做智能家居设备，于是查寻了一下Android BLE的问题，这是比较全面的一片文章，简单翻译一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原文链接:&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
