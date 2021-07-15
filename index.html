@@ -205,10 +205,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-07-14 16:16:34 / 修改时间：16:26:07" itemprop="dateCreated datePublished" datetime="2021-07-14T16:16:34+08:00">2021-07-14</time>
+              <time title="创建时间：2021-07-14 16:16:34" itemprop="dateCreated datePublished" datetime="2021-07-14T16:16:34+08:00">2021-07-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-07-15 19:59:34" itemprop="dateModified" datetime="2021-07-15T19:59:34+08:00">2021-07-15</time>
+              </span>
 
           
 
@@ -240,7 +246,7 @@
 <tbody><tr>
 <td>ldpi</td>
 <td>适用于低密度 (ldpi) 屏幕 (~ 120dpi) 的资源。（在120dpi左右，而非固定值，不同系统也是有差距的）</td>
-<td>0.75（px*0.75）</td>
+<td>0.75（px=dp*0.75）</td>
 </tr>
 <tr>
 <td>mdpi</td>
@@ -250,22 +256,22 @@
 <tr>
 <td>hdpi</td>
 <td>适用于高密度 (hdpi) 屏幕 (~ 240dpi) 的资源。</td>
-<td>1.5（px*1.5）</td>
+<td>1.5（px=dp*1.5）</td>
 </tr>
 <tr>
 <td>xhdpi</td>
 <td>适用于加高 (xhdpi) 密度屏幕 (~ 320dpi) 的资源。</td>
-<td>2.0（px*2）</td>
+<td>2.0（px=dp*2）</td>
 </tr>
 <tr>
 <td>xxhdpi</td>
 <td>适用于超超高密度 (xxhdpi) 屏幕 (~ 480dpi) 的资源。</td>
-<td>3.0（px*3）</td>
+<td>3.0（px=dp*3）</td>
 </tr>
 <tr>
 <td>xxxhdpi</td>
 <td>适用于超超超高密度 (xxxhdpi) 屏幕 (~ 640dpi) 的资源。</td>
-<td>4.0（px*4）</td>
+<td>4.0（px=dp*4）</td>
 </tr>
 <tr>
 <td>nodpi</td>
@@ -275,7 +281,7 @@
 <tr>
 <td>tvdpi</td>
 <td>适用于密度介于 mdpi 和 hdpi 之间的屏幕（约 213dpi）的资源。这不属于“主要”密度组。它主要用于电视，而大多数应用都不需要它。对于大多数应用而言，提供 mdpi 和 hdpi 资源便已足够，系统将视情况对其进行缩放。如果您发现有必要提供 tvdpi 资源，应按一个系数来确定其大小，即 1.33*mdpi。例如，如果某张图片在 mdpi 屏幕上的大小为 100px x 100px，那么它在 tvdpi 屏幕上的大小应该为 133px x 133px。</td>
-<td>1.33（px*1.33）</td>
+<td>1.33（px=dp*1.33）</td>
 </tr>
 </tbody></table>
 <p>例如，你在中密度屏幕上的一个控件或者图片，大小为 48x48 像素，那么它在其他各种密度的屏幕上的大小应该为：</p>
@@ -294,22 +300,28 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">FrameLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"@dimen/text_margin_top"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginEnd</span>=<span class="string">"@dimen/text_margin_end"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginStart</span>=<span class="string">"@dimen/text_margin_start"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"@dimen/text_margin_bottom"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:text</span>=<span class="string">"@string/app_name"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">FrameLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>资源尺寸文件（res/values/dimens.xml）</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_top"</span>&gt;</span>15dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_end"</span>&gt;</span>10dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_start"</span>&gt;</span>20dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_bottom"</span>&gt;</span>20dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_top"</span>&gt;</span>15dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span>//缩放之后的px=15*缩放倍数</span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_end"</span>&gt;</span>10dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_start"</span>&gt;</span>20dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_bottom"</span>&gt;</span>20px<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span>//不会缩放px=20</span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>系统会根据<code>屏幕密度</code>分级区间自行按对应倍数进行缩放，这里的文件都是基于中密度 (mdpi)下的尺寸，如在超高密度 (xhdpi)下，<code>text_margin_top</code>的像素为15x2.0，<code>ic_icon.png</code>的像素为96x96。</p>
-<h4 id="手动适配"><a href="#手动适配" class="headerlink" title="手动适配"></a>手动适配</h4><p>系统的缩放比在一定条件下，是可以保证应用的显示正常，但是往往不一定这么理想，于是手动去设置尺寸，更为常见，就是能过将对应尺寸的资源放入对应dp文件夹来实现，如：</p>
+<p>系统会根据<code>屏幕密度</code>分级区间自行按对应倍数进行缩放，在中密度 (mdpi)下<code>text_margin_top</code>的<code>像素</code>为15，在超高密度 (xhdpi)下，<code>text_margin_top</code>的<code>像素</code>为15x2.0，<code>ic_icon.png</code>的<code>像素</code>为96x96。</p>
+<h4 id="手动适配"><a href="#手动适配" class="headerlink" title="手动适配"></a>手动适配</h4><p>系统的缩放比在一定条件下，是可以保证应用的显示正常，但是往往不一定那么理想，于是手动去设置尺寸，更为常见，就是能过将对应尺寸的资源放入对应dp文件夹来实现，如：</p>
 <ul>
-<li>要适配xhdpi，就将同名图片放入<code>res/drawable-xhdp/ic_icon.png</code>，而默认的<code>res/drawable/ic_icon.png</code>会填补其他dp。</li>
-<li>要适配xhdpi，就将同名文件放入<code>res/layout-xhdpi/activity_main.xml</code>，而默认的<code>res/layout/activity_main.xml</code>会填补其他dp。</li>
-<li>要适配xhdpi，就将同名文件放入<code>res/values-xhdpi/dimens.xml</code>中，而默认的<code>res/values/dimens.xml</code>会填补其他dp。</li>
+<li><p>要适配xhdpi，就将同名图片放入<code>res/drawable-xhdp/ic_icon.png</code>，而默认的<code>res/drawable/ic_icon.png</code>会填补其他dpi。</p>
+</li>
+<li><p>要适配xhdpi，就将同名文件放入<code>res/layout-xhdpi/activity_main.xml</code>，而默认的<code>res/layout/activity_main.xml</code>会填补其他dpi。</p>
+</li>
+<li><p>要适配xhdpi，就将同名文件放入<code>res/values-xhdpi/dimens.xml</code>中，而默认的<code>res/values/dimens.xml</code>会填补其他dpi。</p>
+</li>
 </ul>
+<p>如果使用dp会在相应<code>屏幕密度</code>分级区间自行按对应倍数进行缩放，也就是说相当于覆盖了默认的<code>res/values/dimens.xml</code>中的参数，然后<em>系统自行适配</em>（按对应倍数进行缩放），px则不会进行缩放，例如(res/values-xhdpi/dimens.xml)：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_top"</span>&gt;</span>5dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span> //缩放之后的px=10</span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_end"</span>&gt;</span>5dp<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_start"</span>&gt;</span>10px<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span>//不会缩放px=10</span><br><span class="line">    <span class="tag">&lt;<span class="name">dimen</span> <span class="attr">name</span>=<span class="string">"text_margin_bottom"</span>&gt;</span>15px<span class="tag">&lt;/<span class="name">dimen</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h4 id="使用最小宽度限定符进行适配"><a href="#使用最小宽度限定符进行适配" class="headerlink" title="使用最小宽度限定符进行适配"></a>使用最小宽度限定符进行适配</h4><blockquote>
 <p>通过将屏幕尺寸描述为密度无关像素(dp)的度量值，Android 允许您创建专为非常具体的屏幕尺寸而设计的布局，同时让您不必对不同的像素密度有任何担心。</p>
 </blockquote>
 <p>该最小宽度的计算方式为：<code>屏幕宽度(px)/屏幕密度缩放倍数</code>。如你的屏幕为720x1280 xhdpi，那么720/2=360。</p>
-<p>使用如下：<code>res/values-sw360dp/dimens.xml</code>，及为满足最小宽度(dp)为360dpi的屏幕进行适配，这种方式是分辨率+屏幕密度(dpi)，比较适合一些异形屏。</p>
+<p>使用如下：<code>res/values-sw360dp/dimens.xml</code>，就是满足最小宽度(dp)为360dpi的屏幕进行适配，这种方式是分辨率+屏幕密度(dpi)，比较适合一些异形屏。</p>
 <h4 id="使用代码强行设置Activity的屏幕密度-dpi"><a href="#使用代码强行设置Activity的屏幕密度-dpi" class="headerlink" title="使用代码强行设置Activity的屏幕密度(dpi)"></a><strong>使用代码强行设置Activity的<code>屏幕密度</code>(dpi)</strong></h4><p>这种方式可以比如只适配了xhdpi，想在其它的dpi中也按xhdpi进行绘制。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">float</span> sNoCompatDensity;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">float</span> sNoCompatScaledDensity;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 强制设置dpi</span></span><br><span class="line"><span class="comment">    *</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> targetDP 密度屏幕(160,240,360...)</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> isV      是否横屏</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">setCustomDensity</span><span class="params">(<span class="keyword">int</span> targetDP, <span class="keyword">boolean</span> isV)</span> </span>&#123;</span><br><span class="line">       DisplayMetrics appDisplayMetrics = getResources().getDisplayMetrics();</span><br><span class="line">       <span class="keyword">if</span> (sNoCompatDensity == <span class="number">0</span>) &#123;</span><br><span class="line">           sNoCompatDensity = appDisplayMetrics.density;</span><br><span class="line">           sNoCompatScaledDensity = appDisplayMetrics.scaledDensity;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">float</span> targetDensity;</span><br><span class="line">       <span class="keyword">if</span> (isV) &#123;</span><br><span class="line">           targetDensity =</span><br><span class="line">                   (<span class="keyword">float</span>) appDisplayMetrics.heightPixels / (appDisplayMetrics.heightPixels / (targetDP / <span class="number">160F</span>));</span><br><span class="line">       &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">           targetDensity =</span><br><span class="line">                   (<span class="keyword">float</span>) appDisplayMetrics.widthPixels / (appDisplayMetrics.heightPixels / (targetDP / <span class="number">160F</span>));</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">float</span> targetScaledDensity = targetDensity * (sNoCompatScaledDensity / sNoCompatDensity);</span><br><span class="line">       <span class="keyword">int</span> targetDensityDpi = (<span class="keyword">int</span>) (<span class="number">160</span> * targetDensity);</span><br><span class="line"></span><br><span class="line">       appDisplayMetrics.density = targetDensity;</span><br><span class="line">       appDisplayMetrics.scaledDensity = targetScaledDensity;</span><br><span class="line">       appDisplayMetrics.densityDpi = targetDensityDpi;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
@@ -318,7 +330,7 @@
 <h3 id="相关其它"><a href="#相关其它" class="headerlink" title="相关其它"></a>相关其它</h3><h4 id="dp与px的转换规则"><a href="#dp与px的转换规则" class="headerlink" title="dp与px的转换规则"></a>dp与px的转换规则</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">px &#x3D; dp * (dpi &#x2F; 160)</span><br></pre></td></tr></table></figure>
 
 <p><code>dpi</code>：由上表可得，就是每平方英寸可显示的像素数量，如mdpi~240dpi。</p>
-<h4 id="设计图中的px与dp转换"><a href="#设计图中的px与dp转换" class="headerlink" title="设计图中的px与dp转换"></a>设计图中的px与dp转换</h4><p>在Photoshop中的<strong>像素/英寸 (ppi)</strong>与Android的<code>屏幕密度</code>(dpi)基本是一个概念，于是在设计图(320ppi)中一个控件的外边距为10px，由上面的转换规则可知<code>dp=px/(dpi/160)</code>，这里就是10/(320/160)=5，也就是在xhdpi的布局中对应控件的外边距为5dp，mdpi为2.5dp。</p>
+<h4 id="设计图中的px与dp转换"><a href="#设计图中的px与dp转换" class="headerlink" title="设计图中的px与dp转换"></a>设计图中的px与dp转换</h4><p>在Photoshop中的<strong>像素/英寸 (ppi)</strong>与Android的<code>屏幕密度</code>(dpi)基本是一个概念，于是在设计图(320ppi)中一个控件的外边距为10px，由上面的转换规则可知<code>dp=px/(dpi/160)</code>，这里就是10/(320/160)=5，也就是在xhdpi的布局中对应控件的外边距为5dp。</p>
 <h4 id="改变设备的屏幕密度-dpi"><a href="#改变设备的屏幕密度-dpi" class="headerlink" title="改变设备的屏幕密度(dpi)"></a>改变设备的<code>屏幕密度</code>(dpi)</h4><p>获取设备屏幕分辨率：<code>adb shell wm size</code><br>获取设备<code>屏幕密度</code>(dpi)：<code>adb shell wm density</code><br>设置<code>屏幕密度</code>(dpi) ：<code>adb shell wm density 320</code><br>重置<code>屏幕密度</code>(dpi) ：<code>adb shell wm density reset</code></p>
 <h4 id="获取屏幕参数代码片段"><a href="#获取屏幕参数代码片段" class="headerlink" title="获取屏幕参数代码片段"></a>获取屏幕参数代码片段</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getAndroiodScreenProperty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);</span><br><span class="line">    DisplayMetrics dm = <span class="keyword">new</span> DisplayMetrics();</span><br><span class="line">    wm.getDefaultDisplay().getMetrics(dm);</span><br><span class="line">    <span class="keyword">int</span> width = dm.widthPixels;         <span class="comment">// 屏幕宽度（像素）</span></span><br><span class="line">    <span class="keyword">int</span> height = dm.heightPixels;       <span class="comment">// 屏幕高度（像素）</span></span><br><span class="line">    <span class="keyword">float</span> density = dm.density;         <span class="comment">// 屏幕密度（0.75 / 1.0 / 1.5）</span></span><br><span class="line">    <span class="keyword">int</span> densityDpi = dm.densityDpi;     <span class="comment">// 屏幕密度dpi（120 / 160 / 240）</span></span><br><span class="line">    <span class="comment">// 屏幕宽度算法:屏幕宽度（像素）/屏幕密度</span></span><br><span class="line">    <span class="keyword">int</span> screenWidth = (<span class="keyword">int</span>) (width / density);  <span class="comment">// 屏幕宽度(dp)</span></span><br><span class="line">    <span class="keyword">int</span> screenHeight = (<span class="keyword">int</span>) (height / density);<span class="comment">// 屏幕高度(dp)</span></span><br><span class="line"></span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕宽度（像素）："</span> + width);</span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕高度（像素）："</span> + height);</span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕密度（0.75 / 1.0 / 1.5）："</span> + density);</span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕密度dpi（120 / 160 / 240）："</span> + densityDpi);</span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕宽度（dp）："</span> + screenWidth);</span><br><span class="line">    Log.d(TAG, <span class="string">"屏幕高度（dp）："</span> + screenHeight);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
