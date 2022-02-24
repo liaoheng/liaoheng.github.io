@@ -3,6 +3,10 @@
 # See: https://theme-next.org/docs/theme-settings/
 # ---------------------------------------------------------------
 
+# ---------------------------------------------------------------
+# Site Information Settings
+# See: https://theme-next.org/docs/getting-started/
+# ---------------------------------------------------------------
 
 favicon:
   small: /images/favicon-16x16.png
@@ -23,11 +27,24 @@ creative_commons:
   post: true
   language: deed.zh
 
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
 # Schemes
 #scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 scheme: Gemini
+
+# Dark Mode
+darkmode: true
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# See: https://theme-next.org/docs/theme-settings/sidebar
+# ---------------------------------------------------------------
 
 # Sidebar Avatar
 avatar:
@@ -60,6 +77,10 @@ social_icons:
   icons_only: true
   transition: true
 
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
 codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
@@ -78,6 +99,11 @@ github_banner:
   enable: true
   permalink: https://github.com/liaoheng
   title: Follow me on GitHub
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
+# ---------------------------------------------------------------
 
 # Google Analytics
 google_analytics:
