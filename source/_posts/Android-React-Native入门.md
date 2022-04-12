@@ -1,7 +1,6 @@
+---
 title: Android React Native入门
-author: liaoheng
-tags: []
-categories: []
+tags:
 date: 2017-09-15 17:34:00
 ---
 > 本文需要了解基本Android开发知识

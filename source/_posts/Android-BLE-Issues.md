@@ -1,7 +1,6 @@
-title: 'Android BLE Issues(问题集) '
-author: liaoheng
-tags: []
-categories: []
+---
+title: Android BLE Issues(问题集)
+tags:
 date: 2016-12-19 22:08:00
 ---
 >新进入公司做智能家居设备，于是查寻了一下Android BLE的问题，这是比较全面的一片文章，简单翻译一下。
