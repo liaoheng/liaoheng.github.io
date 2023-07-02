@@ -107,7 +107,7 @@ github_banner:
 
 # Google Analytics
 google_analytics:
-  tracking_id: UA-81435330-1
+  tracking_id: G-64FL8LWFL8
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
