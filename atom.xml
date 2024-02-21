@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>liaoheng`s blog</title>
+  
+  
+  <link href="https://blog.liaoheng.me/atom.xml" rel="self"/>
+  
+  <link href="https://blog.liaoheng.me/"/>
+  <updated>2024-02-21T06:11:49.096Z</updated>
+  <id>https://blog.liaoheng.me/</id>
+  
+  <author>
+    <name>liaoheng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android Ripple(波纹效果)</title>
+    <link href="https://blog.liaoheng.me/2024/02/21/android-ripple/"/>
+    <id>https://blog.liaoheng.me/2024/02/21/android-ripple/</id>
+    <published>2024-02-21T05:49:59.000Z</published>
+    <updated>2024-02-21T06:11:49.096Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;控件中的Ripple标签，即对应一个RippleDrawable，当它被设置为一个控件的background属性时，控件在按下时，即会显示水波效果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;自定义&quot;&gt;&lt;a href=&quot;#自定义&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>传统蓝牙协议栈初探</title>
+    <link href="https://blog.liaoheng.me/2022/04/11/traditional-bluetooth-protocol-stack-simple/"/>
+    <id>https://blog.liaoheng.me/2022/04/11/traditional-bluetooth-protocol-stack-simple/</id>
+    <published>2022-04-11T09:05:36.000Z</published>
+    <updated>2024-02-21T02:32:28.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>线程(进程)的阻塞与挂起</title>
+    <link href="https://blog.liaoheng.me/2022/02/24/thread-block-and-suspend/"/>
+    <id>https://blog.liaoheng.me/2022/02/24/thread-block-and-suspend/</id>
+    <published>2022-02-24T06:10:13.000Z</published>
+    <updated>2024-02-21T04:35:23.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;阻塞与挂起&quot;&gt;&lt;a href=&quot;#阻塞与挂起&quot; class=&quot;headerlink&quot; title=&quot;阻塞与挂起&quot;&gt;&lt;/a&gt;阻塞与挂起&lt;/h1&gt;&lt;h2 id=&quot;挂起-suspend&quot;&gt;&lt;a href=&quot;#挂起-suspend&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>安装Arch Linux小结</title>
+    <link href="https://blog.liaoheng.me/2021/07/28/installation-arch-linux-summary/"/>
+    <id>https://blog.liaoheng.me/2021/07/28/installation-arch-linux-summary/</id>
+    <published>2021-07-28T05:48:38.000Z</published>
+    <updated>2024-02-21T04:24:03.389Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;img data-src=&quot;https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png&quot; style=&quot;zoom:5%;&quot; /&gt;
+
+&lt;p&gt;本人跟随&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android密度无关像素(dp)与屏幕适配</title>
+    <link href="https://blog.liaoheng.me/2021/07/14/android-dp-and-screen-adaptation/"/>
+    <id>https://blog.liaoheng.me/2021/07/14/android-dp-and-screen-adaptation/</id>
+    <published>2021-07-14T08:16:34.000Z</published>
+    <updated>2024-02-21T02:32:28.665Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;密度无关像素-density-independent-pixels&quot;&gt;&lt;a href=&quot;#密度无关像素-density-independent-pixels&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PyQt5中QWebEngineView与JavaScript交互</title>
+    <link href="https://blog.liaoheng.me/2019/12/23/PyQt5-QWebEngineView%E4%B8%8EJavaScript%E4%BA%A4%E4%BA%92/"/>
+    <id>https://blog.liaoheng.me/2019/12/23/PyQt5-QWebEngineView%E4%B8%8EJavaScript%E4%BA%A4%E4%BA%92/</id>
+    <published>2019-12-23T09:16:38.000Z</published>
+    <updated>2024-02-21T02:32:28.665Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h3&gt;&lt;h4 id=&quot;开发环境&quot;&gt;&lt;a href=&quot;#开发环境&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android React Native入门</title>
+    <link href="https://blog.liaoheng.me/2017/09/15/Android-React-Native%E5%85%A5%E9%97%A8/"/>
+    <id>https://blog.liaoheng.me/2017/09/15/Android-React-Native%E5%85%A5%E9%97%A8/</id>
+    <published>2017-09-15T09:34:00.000Z</published>
+    <updated>2024-02-21T02:32:28.664Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文需要了解基本Android开发知识&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android BLE Issues(问题集)</title>
+    <link href="https://blog.liaoheng.me/2016/12/19/Android-BLE-Issues/"/>
+    <id>https://blog.liaoheng.me/2016/12/19/Android-BLE-Issues/</id>
+    <published>2016-12-19T14:08:00.000Z</published>
+    <updated>2024-02-21T02:32:28.663Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;新进入公司做智能家居设备，于是查寻了一下Android BLE的问题，这是比较全面的一片文章，简单翻译一下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原文链接:&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
