@@ -44,7 +44,7 @@ timedatectl set-ntp true
 fdisk -l
 ```
 
-![IVXRYh.png](https://s3.jpg.cm/2021/07/28/IVXRYh.png)
+![](https://pic.liaoheng.me/hc-pic/2024/02/93503db3f240a11f738fc5c37e0287a2.png)
 
 其中`/dev/sda`代表第一块物理磁盘(`/dev/sdb,/dev/sdc`与之类推)
 
@@ -59,7 +59,7 @@ t #改变分区类型
 w #保存并退出
 ```
 
-![IVXqCS.png](https://s3.jpg.cm/2021/07/28/IVXqCS.png)
+![](https://pic.liaoheng.me/hc-pic/2024/02/4811eca3d0b3a9f324247b14d39e571b.png)
 
 新建分区之后需要指定分区类型，使用命令`t {partition number }`，可以参考下表配置分区：
 
@@ -313,3 +313,4 @@ sudo systemctl enable --now gdm.service
 - [Partitioning](https://wiki.archlinux.org/index.php/Partitioning_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E5%B8%83%E5%B1%80%E7%A4%BA%E4%BE%8B)
 - [EFI_system_partition](https://wiki.archlinux.org/index.php/EFI_system_partition)
 - [fstab ](https://wiki.archlinux.org/index.php/Fstab_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+- [GRUB](https://wiki.archlinux.org/index.php/GRUB_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
